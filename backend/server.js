@@ -9,6 +9,7 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 // Start App
 dotenv.config(); // Start global env constats
 const port = process.env.PORT; // Set port
+console.log('port', port);
 connectDB(); //Connect to MongoDB
 const app = express(); // Start express app
 
